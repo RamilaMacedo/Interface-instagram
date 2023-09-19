@@ -14,7 +14,14 @@
     </head>
 
     <body>
-        <img src="imagens/celular.png" class="img_celular">
+        <div class="img">
+            <img src="imagens/celular.png" class="img_celular">
+
+            <img src="imagens/insta1.png" class="insta">
+
+            <img src="imagens/insta2.png" class="insta img2">
+
+        </div>
         <div class="container">
 
             <img src="imagens/insta-logo.png">
@@ -30,5 +37,25 @@
 
 
     </body>
+    <script>
+        /*console.log("Aula de JavaScript") - log() = é um método util para fins de teste ; grava (registrar) mensagem no console*/
+        let imagens = document.querySelector(".img2")/* uso let toda vez que eu quiser criar uma variável*/
+        /* document. = Toda vez que eu quiser usar algo que estar no html eu aciono o document. => dizendo que quero pegar algo que tem no código html (nesse caso a imagem 2) */
+        /* querySelector = método que retorna o primeiro elemento correspondente a um seletor CSS */
+
+
+
+        setInterval(function (){
+        if (imagens.style.opacity == 1){
+            imagens.style.opacity = 0
+        } else {
+            imagens.style.opacity = 1 /*opacity 1 é visível*/
+        }
+    }, 3000); /*3 segundos */
+
+        /*imagens.style.opacity = 1 */
+
+        console.log(imagens)
+    </script>
 
     </html>
