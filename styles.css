@@ -1,0 +1,60 @@
+/* O CSS serve para estilizar e complementar o HTML*/
+
+/* Cascading Style Sheet - Folha de Estilo em Cascata*/
+
+/* Estilizar o corpo do site que esta codificado la no index.html*/
+body { 
+    background: #fafafa; /* Aqui é uma referência para a cor que estou usando de fundo para o site - é só seguir (Paleta de cores css) */
+    display: flex;
+    justify-content: center; /* Justifica o texto */
+    align-items: center;
+    height: 100vh; /* vh vai me da tamanho total do dispositivo, no caso os 100vh corresponde a 100% da página total  do nosso body */
+    font-family: sans-serif;
+}
+
+.img_celular {
+    width: 450px; /* controla a largura dos elementos */
+
+}
+
+.container {
+    border: 1px solid #dedede; /* definir largura de borda, estilo e cor */
+    display: flex ;
+    flex-direction: column; /*direcionar a caixa uma abaixo da outra*/
+    width: 300px; 
+    padding: 40px; /* propriedade que cria espaçamento */
+}
+
+input {
+    height: 36px;
+    border: 1px solid #dedede;
+    border-radius: 3px; /* arredondar as bordas */
+    margin-top: 10px;
+}
+
+button {
+    background: #0095f6;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* colocar maozinha do cursor ao selecionar o botão de entrar */
+    color: white;
+}
+
+.Facebook {
+    color: #315185;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.esqueceu {
+    color: #315185;
+    text-align: center;
+    cursor: pointer;
+    font-size: 10px;
+    margin-top: 20px;
+}
